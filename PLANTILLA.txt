@@ -1,0 +1,15 @@
+const Discord = require(`discord.js`);
+const { MessageActionRow, MessageSelectMenu, MessageEmbed, MessageButton} = require(`discord.js`)
+
+module.exports = {
+    name: "",
+    desc: "",
+    run: async (client, message, args, prefix) => {
+        message.channel.send(`EL TEXTO AQUÍ `).then(m => {
+            m.react(`❤️`)
+            m.react(`🧡`)
+            m.react(`💛`)
+            m.react(`💚`)
+          })
+}
+}
